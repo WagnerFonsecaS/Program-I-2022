@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+   </head>
+  <body>
+	<h1 style="text-align: center">Formulário de Inscrição de Evento</h1>
+		<form>
+			<fieldset style="text-align: justify";>
+				<p><label>Nome Completo*: <input type="text" id="tNome" name="cNome" required></p>
+				<p><label>E-mail*: <input type="email" name="email" id="email" required> </p>
+				<p><label>Sexo*: <input type="radio" name="sexo" id="masc" required><label> Maculino 
+				<input type="radio" name="sexo" id="femi"><label> Feminino</p>
+				<p><label>Cargo: <input type="text" name="ocupação" id="cargo" maxlength="3"></p>
+				<p><label>Nascimento: <input type="date" name="data" id="nascimento">
+				<p><label>Telefone: <input type="tel" name="telefone" id="cell"
+				pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx" maxlength="11">			
+			</fieldset>
+		</form>
+	<h2 style="text-align: justify">Informações da Instituição</h2>
+		<p style="text-align: justify">Preencha os campos abaixo com as informações da empresa em que trabalha.
+		<form>
+			<fieldset>
+				<label>Empresa: <input type="text" id="empresa" name="trabalho">
+				<p><label>Endereço Completo: <input type="text" id="endereco" name="oendereco">
+				<p><label>Cidade: <input type="cite" id="cidade" name="local">
+				<p><label>Estado:
+					<select name="estado">
+					<option value="AC">Acre</option>
+					<option value="AL">Alagoas</option>
+					<option value="AP">Amapá</option>
+					<option value="AM">Amazonas</option>
+					<option value="BA">Bahia</option>
+					<option value="CE">Ceará</option>
+					<option value="ES">Espírito Santo</option>
+					<option value="GO">Goiás</option>
+					<option value="MA">Maranhão</option>
+					<option value="MT">Mato Grosso</option>
+					<option value="MS">Mato Grosso do Sul</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="PA">Pará</option>
+					<option value="PB">Paraíba</option>
+					<option value="PR">Paraná</option>
+					<option value="PE">Pernambuco</option>
+					<option value="PI">Piauí</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="RN">Rio Grande do Norte</option>
+					<option value="RS">Rio Grande do Sul</option>
+					<option value="RO">Rondônia</option>
+					<option value="RR">Roraima</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="SP">São Paulo</option>
+					<option value="SE">Sergipe</option>
+					<option value="TO">Tocantins</option>
+					<option value="DF">Distrito Federal</option>
+					</select>
+					</label>
+				<p><label>Quant. Funcionários: <input type="text" id="qf" name="funcionario">
+				<p><label>Observações:<br>
+					<textarea style="resize: none" name="menssagem" rows="10" cols="30" maxlength="300" >
+					</textarea>
+			</fieldset>	
+				<p>Recibo:
+					<input type="checkbox" name="confirmar" value="confirmar"> Emitir em nome da  instituição</p>
+				<p>
+					<input type="submit" value="Fazer a Inscrição" id="submit"></p>
+		</form>
+  </body>
+</html>
