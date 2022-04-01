@@ -1,0 +1,33 @@
+div{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 5px black dashed;
+}
+#div1{
+    background-color: yellow;
+}
+#div2{
+    background-color: #c1a4cd;
+    background-clip: padding-box;
+}
+#div3{
+    background-image: url("https://addons-media.operacdn.com/media/extensions/97/250397/2.9.5-rev1/icons/icon_64x64_1df1e77af3d72abea139bf5d7b49efdb.png");
+    background-repeat: no-repeat;
+}
+#div4{
+    background-image: url("https://addons-media.operacdn.com/media/extensions/97/250397/2.9.5-rev1/icons/icon_64x64_1df1e77af3d72abea139bf5d7b49efdb.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+#div5{
+    background-image: url("https://addons-media.operacdn.com/media/extensions/97/250397/2.9.5-rev1/icons/icon_64x64_1df1e77af3d72abea139bf5d7b49efdb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+body{
+    background-image: url("https://addons-media.operacdn.com/media/extensions/97/250397/2.9.5-rev1/icons/icon_64x64_1df1e77af3d72abea139bf5d7b49efdb.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
