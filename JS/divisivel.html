@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="por2"></p>
+    <p id="por3"></p>
+    <p id="naoD"></p>
+    <script>
+        var x=prompt("Digite um número: ");
+            if (x %2 == 0){
+                document.getElementById('por2').innerHTML="É divisível por 2!"
+            } if (x %3 == 0){
+                document.getElementById('por3').innerHTML="É divisível por 3!"
+            } if (x%2 != 0 && x%3 !=0){
+                document.getElementById('naoD').innerHTML="Não é divisível nem por 2 e nem por 3!"
+            }
+    </script>
+</body>
+</html>
