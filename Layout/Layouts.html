@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>    
+    <style>
+.item0 { grid-area: logo; text-align: left; height: 40px;}
+.item00 { grid-area: logon; text-align-last: justify ; height: 40px;}
+.item1 { grid-area: navigation; text-align: center;height: 20px;}
+.item2 { grid-area: navigation; text-align: center; height: 10px;}
+.item3 { grid-area: headerbaner; text-align: center; height: 40px;}
+.item12 { grid-area: headerbaner2; text-align: center;height: 45px;}
+.item4 { grid-area: introtextarea; text-align: center;height: 35px;}
+.item5 { grid-area: sidebar; text-align: center; height: 150px;}
+.item29 { grid-area: sidebarN; text-align: center; height: 330px;}
+.item6 { grid-area: bodyarea; text-align: center; height: 150px;}
+.item30 { grid-area: bodyarea2; text-align: center; height: 150px;}
+.item7 { grid-area: box1; text-align: center;height: 70px;}
+.item8 { grid-area: box2; text-align: center;height: 70px;}
+.item9 { grid-area: box3; text-align: center;height: 70px;}
+.item10 { grid-area: footer; text-align: center;height: 7px;}
+.item11 { grid-area: Footer; text-align: center;height: 7px;}
+.item13 { grid-area: Nada; text-align: center;height: 35px; width: 35px;}
+.item14 { grid-area: Nada1; text-align: center;height: 35px; width: 35px;}
+.item15 { grid-area: Nada2; text-align: center;height: 35px; width: 35px;}
+.item16 { grid-area: Nada3; text-align: center;height: 35px; width: 35px;}
+.item17 { grid-area: Nada4; text-align: center;height: 35px; width: 35px;}
+.item18 { grid-area: Nada5; text-align: center;height: 35px; width: 35px;}
+.item19 { grid-area: Nada6; text-align: center;height: 35px; width: 35px;}
+.item20 { grid-area: Nada7; text-align: center;height: 35px; width: 35px;}
+.item21 { grid-area: Nada8; text-align: center;height: 35px; width: 35px;}
+.item22 { grid-area: Nada9; text-align: center;height: 35px; width: 35px;}
+.item23 { grid-area: Nada10; text-align: center;height: 35px; width: 35px;}
+.item24 { grid-area: Nada11; text-align: center;height: 35px; width: 35px;}
+
+    body {
+        box-sizing: border-box;
+        margin: auto;
+        padding: center;
+        width: 80%;
+        height: 100%;
+        background-color: rgb(252, 252, 252);
+    }
+
+    .grid-container0 { 
+        background: rgb(255, 255, 255);
+        width: 30vw;
+        height: 30vw;
+        padding: 8px;
+        display: inline-grid;
+        grid-template-areas:
+        'logo logo logo'
+        'navigation navigation navigation'
+        'headerbaner headerbaner headerbaner'
+        'sidebar bodyarea bodyarea'
+        'footer footer footer'; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;    
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .grid-container1 {
+        background: rgb(255, 255, 255);
+        width: 30vw;
+        height: 30vw;
+        padding: 5px;   
+        display: inline-grid;
+        grid-template-areas:
+        'logon logon logon'
+        'headerbaner2 headerbaner2 headerbaner2'
+        'introtextarea introtextarea introtextarea'
+        'box1 box2 box3'
+        'Footer Footer Footer';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;    
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .grid-container2 { 
+        background: rgb(255, 255, 255);
+        width: 30vw;
+        height: 30vw;
+        padding: 5px;
+        display: inline-grid;
+        grid-template-areas:
+        'logo logo logo'
+        'sidebarN headerbaner headerbaner'
+        'sidebarN bodyarea2 bodyarea2'
+        'footer footer footer'; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;    
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .grid-container3 {
+        background: rgb(248, 248, 248);
+        width: 30vw;
+        height: 30vw;
+        padding: 5px;   
+        display: inline-grid;
+        grid-template-areas:
+        'logon logon logon'
+        'Nada Nada1 Nada2'
+        'Nada3 Nada4 Nada5'
+        'Nada6 Nada7 Nada8'
+        'Nada9 Nada10 Nada11'
+        'box1 box2 box3'
+        'Footer Footer Footer';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;    
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+    .grid-container0 > div {
+        background: rgb(134, 131, 131);
+        padding: 10px;
+    }
+    .grid-container1 > div {
+        background: rgb(134, 131, 131);
+        padding: 10px;
+    }
+    .grid-container2 > div {
+        background: rgb(134, 131, 131);
+        padding: 10px;
+    }
+    .grid-container3 > div {
+        background: rgb(134, 131, 131);
+        padding: 10px;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="grid-container0">
+            <div class="item0">Logo</div>
+            <div class="item2">Navigation</div>
+            <div class="item3">Header/Baner</div> 
+            <div class="item5">Side Bar</div>
+            <div class="item6">Body Area</div>
+            <div class="item10">Footer</div>
+        </div>
+        <div class="grid-container1">
+            <div class="item00">Logo Navigation</div>     
+            <div class="item4">Intro Text Area</div>    
+            <div class="item7">Box1</div>
+            <div class="item8">Box2</div>
+            <div class="item9">Box3</div>    
+            <div class="item11">Footer</div>
+            <div class="item12">Header/Baner</div>
+        </div>
+        <p></p>
+        <p></p>
+        <div class="grid-container2">
+            <div class="item0">Logo</div>
+            <div class="item3">Header/Baner</div> 
+            <div class="item29">Side Bar Navigation</div>
+            <div class="item30">Body Area</div>
+            <div class="item10">Footer</div>
+        </div>
+        <div class="grid-container3">
+            <div class="item00">Logo Navigation</div>
+            <div class="item13"> </div>
+            <div class="item14"> </div>
+            <div class="item15"> </div>
+            <div class="item16"> </div>
+            <div class="item17"> </div>
+            <div class="item18"> </div>
+            <div class="item19"> </div>
+            <div class="item20"> </div>
+            <div class="item21"> </div>
+            <div class="item22"> </div>
+            <div class="item23"> </div>
+            <div class="item24"> </div>
+            <div class="item7">Box1</div>
+            <div class="item8">Box2</div>
+            <div class="item9">Box3</div>    
+            <div class="item11">Footer</div>
+        </div>
+    </body>
+</html>
