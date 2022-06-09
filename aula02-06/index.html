@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="notas" method="get">
+    <div>
+        <label>Prova 1:</label>
+        <input type="number" name="prova1" id="prova1" min="0" max="100" required>
+        <p></p>
+    </div>
+    <div>
+        <label>Prova 2:</label>
+        <input type="number" name="prova2" id="prova2" min="0" max="100" required>
+        <p></p>
+    </div>
+    <input type="radio" name="escolha" value="arit" id="arit">Média Aritmética
+    <input type="radio" name="escolha" value="pond" id="pond">Média Ponderada
+    <p></p>
+    <button onClick="validate(this.form)">Calcular</button type="text" readonly id="resultado" >
+    <button >Limpar</button type="text" readonly id="limpar">
+    </form>
+    <script>
+        function validate(form){
+            var preencheu = false;
+            if (arit.checked){
+                preencheu=true;
+                
+            } if (pond.checked){
+                preencheu=true
+            }
+            if (preencheu){
+                form.submit();
+            } else{
+                alert("É necessário escolher uma opção.")
+            }
+        }
+        
+        function mA(form){
+        }
+    </script>
+</body>
+</html>
