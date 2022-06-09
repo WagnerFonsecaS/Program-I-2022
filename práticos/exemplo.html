@@ -1,0 +1,36 @@
+<html lang="pt-br">
+    <head>
+        <title>Exemplo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe um valor" style="background-color: aqua;"><br>
+        <input type="number" id="valor2" placeholder="Informe outro valor"><br>
+        <input type="button" id="botao" value="Somar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+            valor2.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                let valor2 = parseInt(document.querySelector("#valor2").value);
+                resultado.innerHTML += valor + valor2;
+            }
+            botao.onmouseover = function(){
+                resultado.style.backgroundColor = "red";
+            }
+            botao.onmouseout = function(){
+                resultado.style.backgroundColor = "white";
+            }
+
+        </script>
+    </body>
+</html>
