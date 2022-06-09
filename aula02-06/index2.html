@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="carros" method="get">
+    <div>
+        <label>Valor do carro novo:</label>
+        <input type="number" name="carronovo" id="novo" required>
+        <p></p>
+    </div>
+    <div>
+        <label>Valor do carro usado:</label>
+        <input type="number" name="carrousado" id="usado" required>
+        <p></p>
+    </div>
+    <div>
+        <label type="number" name="valorapagar" id="pagar">Valor a pagar:</label>
+        <p></p>
+    </div>
+    <input type="radio" name="escolha" value="unica" id="unica">Parcela única<p></p>
+    <input type="radio" name="escolha" value="12x" id="dozex">12 x<p></p>
+    <input type="radio" name="escolha" value="24x" id="vintequatrox">24 x<p></p>
+    <label>Valor da Parcela:</label>
+    <p></p>
+    <button onmousemove="validate(this.form)">Calcular</button type="text" readonly id="resultado" >
+    <button >Limpar</button type="text" readonly id="limpar">
+    </form>
+    
+    <script>
+        function validate(form){
+            var preencheuunica = false;
+            var preencheu12x = false;
+            var preencheu24x = false;
+            var novo=parseFloat(document.getElementById("novo").value);
+            var usado=parseFloat(document.getElementById("usado").value);
+            var pagar=parseFloat(document.getElementById("pagar").value);
+
+
+            console.log("Validate Inicio")
+            if (unica.checked){
+                console.log("If1");
+                preencheuunica=true;
+
+                
+            }
+            else if (dozex.checked){
+                console.log("If2");
+                preencheudozex=true;
+            }
+            else if (vintequatrox.checked){
+                console.log("If3");
+                preencheuvintequatrox=true;
+            }
+            else {
+                alert("É necessário escolher uma opção.");
+            }
+
+            console.log(preencheuunica);
+            console.log(preencheudozex);
+            console.log(preencheuvintequatrox);
+            console.log(novo);
+            console.log(usado);
+            console.log(pagar);
+            
+            if (preencheuunica){
+                var pagar=(novo-usado);
+                
+            }
+            if (preencheudozex){
+                var pagar=(novo*1.5);
+            }
+            else if (preencheuvintequatrox){
+                var pagar=(novo*2.5);
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <form name="notas" method="get">
     <div>
         <label>Prova 1:</label>
@@ -21,27 +22,59 @@
     <input type="radio" name="escolha" value="arit" id="arit">Média Aritmética
     <input type="radio" name="escolha" value="pond" id="pond">Média Ponderada
     <p></p>
-    <button onClick="validate(this.form)">Calcular</button type="text" readonly id="resultado" >
+    <button onmousemove="validate(this.form)">Calcular</button type="text" readonly id="resultado" >
     <button >Limpar</button type="text" readonly id="limpar">
     </form>
+    
     <script>
         function validate(form){
-            var preencheu = false;
+            var preencheuari = false;
+            var preencheupond = false;
+            var prova1=parseFloat(document.getElementById("prova1").value);
+            var prova2=parseFloat(document.getElementById("prova2").value);
+
+            console.log("Validate Inicio")
             if (arit.checked){
-                preencheu=true;
+                console.log("If1");
+                preencheuari=true;
+
                 
-            } if (pond.checked){
-                preencheu=true
             }
-            if (preencheu){
-                form.submit();
-            } else{
-                alert("É necessário escolher uma opção.")
+            else if (pond.checked){
+                console.log("If2");
+                preencheupond=true;
+            }
+            else {
+                alert("É necessário escolher uma opção. Da média a ser utilizada!");
+            }
+
+            console.log(preencheuari);
+            console.log(preencheupond);
+            console.log(prova1);
+            console.log(prova2);
+            
+            if (preencheuari){
+                var media=(prova1+prova2)/2;
+                
+            }
+            else if (preencheupond){
+                var media=(prova1*2) + (prova2*4)/6;
+            }
+
+
+            if (media >= 60){
+                document.getElementById('apro').innerHTML="Parabéns, aprovado! Média "+media;                
+            }
+            else if (media < 30){
+                document.getElementById('repro').innerHTML="Reprovado! Média "+media;
+            } else {
+                document.getElementById('recu').innerHTML="Recuperação! Média "+media;
             }
         }
         
-        function mA(form){
-        }
     </script>
+    <p id="apro"></p>
+    <p id="repro"></p>
+    <p id="recu"></p>
 </body>
 </html>
