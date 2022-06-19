@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+        
+        
+        .container {
+          border-radius: 5px;
+          background-color: #bebebece;
+          padding: 20px;
+        }
+        
+        </style>
 </head>
 <body>
-    
+    <div class="container">
     <form name="carros" method="get">
     <div>
         <label>Valor do carro novo:</label>
@@ -20,7 +46,7 @@
         <p></p>
     </div>
     <div>
-        <label type="number" name="valorapagar" id="pagar">Valor a pagar:</label>
+        <div type="number" name="valorapagar" id="pagar">Valor a pagar:</div>
         <p></p>
     </div>
     <input type="radio" name="escolha" value="unica" id="unica">Parcela única<p></p>
@@ -45,9 +71,7 @@
             console.log("Validate Inicio")
             if (unica.checked){
                 console.log("If1");
-                preencheuunica=true;
-
-                
+                preencheuunica=true;    
             }
             else if (dozex.checked){
                 console.log("If2");
@@ -82,5 +106,6 @@
         }
         
     </script>
+    </div>
 </body>
 </html>
