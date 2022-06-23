@@ -1,0 +1,21 @@
+body{
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-family: helvetica;
+    line-height: 1.5;
+    background: url(digital.jpg) no-repeat;
+    color: rgba(130, 134, 134, 0.726);
+}
+a{
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-size: 15px;
+    background-color: rgba(71, 70, 70, 0.39);
+}
+h1{
+    background-color: rgba(80, 81, 82, 0.452);
+}
+h3{
+    background-color: rgba(80, 81, 82, 0.452)
+}
