@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(42, 98, 218);
+}
+.container{
+    width: 100vw;
+    height: 100vw;
+    background-image: url(digital.jpg);
+    background-size: cover;
+
+}
+a{
+    color: rgb(250, 250, 250);
+    font-family: serif;
+    font-size: 15px;
+}
+h1{
+    background-color: rgba(80, 81, 82, 0.452);
+    color: rgb(154, 160, 165);
+}
+h3{
+    background-color: rgba(80, 81, 82, 0.452);
+    color: rgb(154, 156, 165);
+}
+p{
+    background-color: rgba(69, 116, 219, 0.473);
+}
